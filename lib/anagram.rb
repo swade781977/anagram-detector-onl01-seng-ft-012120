@@ -11,7 +11,6 @@ class Anagram
     a = @word.split('').sort 
     list.each do |word|
       s = word.split('').sort
-    binding.pry
     end
   end
 end
