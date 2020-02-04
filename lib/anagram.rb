@@ -12,7 +12,7 @@ class Anagram
     a = @word.split('').sort 
     list.each do |word|
       s = word.split('').sort
-      if a.all?{|letters| s.include?(letters)}
+      if a =~ /[\d[s]]
         x.push(word)
       end
     end
