@@ -3,7 +3,6 @@ class Anagram
   def initialize (word)
     @word = word
     a = word.split('').sort
-    binding.pry
   end
   attr_accessor :word, :list
   
@@ -11,7 +10,7 @@ class Anagram
     matches =[]
     list.each do |word|
       l_a = word.split('').sort
-          if w2a.all?{|wordi| l_a.include?(wordi)}
+          if a.all?{|letters| l_a.include?(letters)}
         matches.push(word)
         else
           puts "There are no Matches!"
