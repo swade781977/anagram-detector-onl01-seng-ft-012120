@@ -6,7 +6,6 @@ class Anagram
   end
   attr_accessor :word, :list
   
- w2a = @word.split.sort
   def match(list)
     matches =[]
     list.each do |word|
