@@ -1,12 +1,12 @@
 class Anagram
   def initialize (word)
     @word = word
-    w2a = @word.split.sort
+    
   end
   attr_accessor :word, :list
   
   
-  
+  w2a = @word.split.sort
   def match(list)
     matches =[]
     list.each do |word|
