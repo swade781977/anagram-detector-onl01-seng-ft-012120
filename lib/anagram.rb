@@ -9,7 +9,7 @@ class Anagram
   
   def match(list)
     matches =[]
-    list.each |word|
+    list.each do |word|
       l_a = word.split.sort
           if w2a.all?{|wordi| l_a.include?(wordi)}
         matches.push(word)
