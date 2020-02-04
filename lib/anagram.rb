@@ -8,7 +8,7 @@ class Anagram
   attr_accessor :word, :list
   
   def match(list)
-    @word.split('').sort 
+    a = @word.split('').sort 
     list.each do |word|
     binding.pry
     end
