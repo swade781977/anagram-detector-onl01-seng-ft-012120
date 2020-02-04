@@ -15,7 +15,7 @@ class Anagram
       if a =~ /[s]/
         x.push(word)
       end
-      binding.pry
     end
+    x
   end
 end
