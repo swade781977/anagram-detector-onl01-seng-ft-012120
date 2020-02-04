@@ -4,11 +4,11 @@ class Anagram
     w2a = @word.split.sort
     @list = []
   end
-  attr_accessor :word :list
+  attr_accessor :word, :list
   
   
   
-  def match(@list)
+  def match(list)
     matches =[]
     @list.each |word|
        l_a = word.split.sort
