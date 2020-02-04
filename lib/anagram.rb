@@ -9,12 +9,12 @@ class Anagram
   
   def match(list)
     matches =[]
-      list.each |word|
-       l_a = word.split.sort
-      if w2a.all?{|wordi| l_a.include?(wordi)}
+    list.each |word|
+      l_a = word.split.sort
+          if w2a.all?{|wordi| l_a.include?(wordi)}
         matches.push(word)
-      else
-        puts "There are no Matches!"
-      end
+        else
+          puts "There are no Matches!"
+        end
     end
   end
