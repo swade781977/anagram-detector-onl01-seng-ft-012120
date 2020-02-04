@@ -19,3 +19,6 @@ class Anagram
     x
   end
 end
+
+listen = Anagram.new("listen")
+listen.match()
