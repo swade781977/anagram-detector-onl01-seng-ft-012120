@@ -15,5 +15,8 @@ class Anagram
       if w2a.all?{|wordi| l_a.include?(wordi)}
         matches.push(word)
       else
-        
+        puts "There are no Matches!"
+      end
+    end
+  end
 end
