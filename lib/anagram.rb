@@ -3,7 +3,7 @@ class Anagram
   def initialize (word)
     @word = word
     binding.pry
-    a = @word.split
+    a = @word
   end
   attr_accessor :word, :list
   
