@@ -7,12 +7,12 @@ class Anagram
   end
   attr_accessor :word, :list
   
-  def match(list)
+   def match(list)
     x = []
     a = @word.split('').sort 
     list.each do |word|
       s = word.split('').sort
-      if a =~ /[s]/
+      if a.all?{|letters| s.include?(letters)}
         x.push(word)
       end
     end
@@ -20,5 +20,3 @@ class Anagram
   end
 end
 
-listen = Anagram.new("listen")
-listen.match(%w(enlists google inlets banana))
