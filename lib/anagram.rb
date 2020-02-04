@@ -11,6 +11,6 @@ class Anagram
   def match(@list)
     @list.each |word|
       word.split.sort
-      if w2a.all
+      if w2a.all?{|word| 
   
 end
