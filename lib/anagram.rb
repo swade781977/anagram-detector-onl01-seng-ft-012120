@@ -8,9 +8,14 @@ class Anagram
   attr_accessor :word, :list
   
   def match(list)
+    x = []
     a = @word.split('').sort 
     list.each do |word|
       s = word.split('').sort
+      if a =~ /[s]/
+        x.push(word)
+      end
+      binding.pry
     end
   end
 end
