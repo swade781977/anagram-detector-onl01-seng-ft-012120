@@ -11,8 +11,8 @@ class Anagram
     x = []
     a = @word.split('').sort 
     list.each do |word|
-      s = word.split('').sort
-      if a == s
+      sow = word.split('').sort
+      if a == sow
         x.push(word)
       end
     end
