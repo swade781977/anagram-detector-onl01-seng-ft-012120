@@ -1,7 +1,8 @@
+require 'pry'
 class Anagram
   def initialize (word)
     @word = word
-    
+    binding.pry
   end
   attr_accessor :word, :list
   
